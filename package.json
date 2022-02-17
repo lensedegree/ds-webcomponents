@@ -1,0 +1,35 @@
+{
+  "name": "@lensedegree/ds-webcomponents",
+  "version": "0.0.0-alpha.1",
+  "description": "Design system desenvolvido para ser utilizado nos sistemas da Lense Degree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6007",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lensedegree/ds-webcomponents.git"
+  },
+  "keywords": [
+    "Lense Degree",
+    "Design System",
+    "Web components",
+    "Shadow DOM"
+  ],
+  "author": "Lense Degree <contato@lensedegree.com> (http://lensedegree.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lensedegree/ds-webcomponents/issues"
+  },
+  "homepage": "https://github.com/lensedegree/ds-webcomponents#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@storybook/addon-actions": "^6.4.12",
+    "@storybook/addon-essentials": "^6.4.12",
+    "@storybook/addon-links": "^6.4.12",
+    "@storybook/html": "^6.4.12",
+    "babel-loader": "^8.2.3"
+  }
+}

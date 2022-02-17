@@ -1,0 +1,4 @@
+.github
+.storybook
+**/node_modules
+src/stories
