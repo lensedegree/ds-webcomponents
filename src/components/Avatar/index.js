@@ -1,5 +1,3 @@
-const imageDefault = require('../../assets/avatar-default.jpg')
-
 class Avatar extends HTMLElement {
 	constructor() {
 		super()
@@ -33,7 +31,7 @@ class Avatar extends HTMLElement {
 
 	connectedCallback() {
 		if(!this.src) {
-			this.src = this.getAttribute('src') ?? imageDefault
+			this.src = this.getAttribute('src') ?? null
 		}
 
 		if(!this.size) {
@@ -127,7 +125,9 @@ class Avatar extends HTMLElement {
 		].join(' ')
 
 		let img = document.createElement('img')
-		img.setAttribute('src', this.src)
+		if(this.src) {
+			img.setAttribute('src', this.src)
+		}
 
 		avatar.appendChild(img)
 
