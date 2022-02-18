@@ -4,9 +4,7 @@ export default {
 	title: 'Base Components/Input',
 	argTypes: {
 		active: {
-			options: ['deactive', 'active'],
-			control: { type: 'radio' },
-			defaultValue: 'active'
+			control: { type: 'boolean' },
 		}
 	}
 }
@@ -15,7 +13,7 @@ export default {
 
 export const Dropdown = ({ active }) => `
 	<lens-dropdown
-		active='${active}'
+		${active ? 'active' : ''}
 	>
 		<option>Option 1</option>
 		<option>Option 2</option>

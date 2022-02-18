@@ -73,8 +73,6 @@ class Toast extends HTMLElement {
 			} else {
 				this.message = 'Adicione uma mensagem dentro da tag do Toast'
 			}
-			
-			console.log(this.message)
 		}
 		
 		this._container.className = [

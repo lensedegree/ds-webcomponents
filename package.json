@@ -1,6 +1,6 @@
 {
   "name": "@overlens/ds-webcomponents",
-  "version": "0.0.0-alpha.5",
+  "version": "0.0.0-alpha.6",
   "description": "Biblioteca de Web Components que implementa os componentes do Design System da Overlens",
   "main": "index.js",
   "scripts": {

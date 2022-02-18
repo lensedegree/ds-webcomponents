@@ -137,7 +137,6 @@ class Pagination extends HTMLElement {
 	}
 
 	_renderBasic() {
-		/* FIXME: O dígito 1 tira o foco do input */
 		/* FIXME: Esse tipo de paginação não têm botão de 'enviar' */
 		this._container.className = [
 			`pagination`,
@@ -282,7 +281,6 @@ class Pagination extends HTMLElement {
 		this._container.appendChild(forwardButton)
 
 		if(this.nPages >= 7) {
-			/* FIXME: O dígito 1 tira o foco do input */
 			const inputContainer = document.createElement('div')
 			const input = document.createElement('input')
 			inputContainer.appendChild(input)

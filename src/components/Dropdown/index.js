@@ -36,14 +36,11 @@ class Dropdown extends HTMLElement {
 
 	connectedCallback() {
 		if(!this.active) {
-			switch (this.getAttribute('active')) {
-				case 'active':
-					this.active = 'active'
-					break
-				default:
-					this.active = 'deactive'
-					break
-			}
+			this.active = 
+				this.getAttribute('active') === '' 
+				|| this.getAttribute('active') === 'true' 
+					? 'active'
+					: 'deactive'
 		}
 		
 		this._render({ initial: true })

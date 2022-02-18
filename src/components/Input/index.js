@@ -111,8 +111,10 @@ class Input extends HTMLElement {
 			this._root.removeChild(this._container)
 			this._container.innerHTML = ``
 
-			this._root.removeChild(this._infoContainer)
-			this._infoContainer.innerHTML = ``
+			if(this.info !== '') {
+				this._root.removeChild(this._infoContainer)
+				this._infoContainer.innerHTML = ``
+			}
 		}
 
 		this._container.className = [
@@ -155,6 +157,7 @@ class Input extends HTMLElement {
 				'pattern', 
 				'^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$'
 			) /* FIXME: Testar a validação */
+				/* Essa validação apenas gera um erro no console */
 		} else if(this.variant === 'password' && !this.visibility) {
 			input.setAttribute('type', 'password')
 		} else {

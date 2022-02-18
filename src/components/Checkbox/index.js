@@ -85,10 +85,6 @@ class Checkbox extends HTMLElement {
 
 	_createOptions() {
 		for(let child of this.children) {
-			if (child.tagName !== 'OPTION') {
-				throw new Error('O elemento lens-checkbox só aceita elementos \'options\' como filho')
-			}
-		
 			const optionContainer = document.createElement('span')
 
 			const optionInput = document.createElement('input')

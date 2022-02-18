@@ -71,12 +71,9 @@ class RadioButton extends HTMLElement {
 		this._root.appendChild(this._container)
 	}
 
+
 	_renderOptions() {
 		for(let child of this.children) {
-			if (child.tagName !== 'OPTION') {
-				throw new Error('O elemento lens-radio-button só aceita elementos \'options\' como filho')
-			}
-
 			const optionContainer = document.createElement('span')
 
 			const input = document.createElement('input')
