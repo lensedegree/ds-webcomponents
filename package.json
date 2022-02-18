@@ -1,7 +1,7 @@
 {
   "name": "@overlens/ds-webcomponents",
   "version": "0.0.0-alpha.1",
-  "description": "Design system desenvolvido para ser utilizado nos sistemas da Lense Degree",
+  "description": "Biblioteca de Web Components que implementa os componentes do Design System da Overlens",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
