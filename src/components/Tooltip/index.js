@@ -25,7 +25,7 @@ class Tooltip extends HTMLElement {
 		
 		let linkDSCSS = document.createElement('link')
 		linkDSCSS.setAttribute('rel', 'stylesheet')
-		linkDSCSS.setAttribute('href', 'https://unpkg.com/@lensedegree/ds-css/src/components/Tooltip/index.css')
+		linkDSCSS.setAttribute('href', 'https://unpkg.com/@overlens/ds-css/src/components/Tooltip/index.css')
 		this._root.appendChild(linkDSCSS)
 	}
 

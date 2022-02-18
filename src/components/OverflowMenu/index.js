@@ -31,7 +31,7 @@ class OverflowMenu extends HTMLElement {
 
 		let linkDSCSS = document.createElement('link')
 		linkDSCSS.setAttribute('rel', 'stylesheet')
-		linkDSCSS.setAttribute('href', 'https://unpkg.com/@lensedegree/ds-css/src/components/OverflowMenu/index.css')
+		linkDSCSS.setAttribute('href', 'https://unpkg.com/@overlens/ds-css/src/components/OverflowMenu/index.css')
 		this._root.appendChild(linkDSCSS)
 	}
 

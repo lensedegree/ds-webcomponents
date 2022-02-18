@@ -27,7 +27,7 @@ class Avatar extends HTMLElement {
 
 		let linkDSCSS = document.createElement('link')
 		linkDSCSS.setAttribute('rel', 'stylesheet')
-		linkDSCSS.setAttribute('href', 'https://unpkg.com/@lensedegree/ds-css/src/components/Avatar/index.css')
+		linkDSCSS.setAttribute('href', 'https://unpkg.com/@overlens/ds-css/src/components/Avatar/index.css')
 		this._root.appendChild(linkDSCSS)
 	}
 

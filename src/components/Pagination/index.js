@@ -29,12 +29,12 @@ class Pagination extends HTMLElement {
 
 		let linkDSCSS = document.createElement('link')
 		linkDSCSS.setAttribute('rel', 'stylesheet')
-		linkDSCSS.setAttribute('href', 'https://unpkg.com/@lensedegree/ds-css/src/components/Pagination/index.css')
+		linkDSCSS.setAttribute('href', 'https://unpkg.com/@overlens/ds-css/src/components/Pagination/index.css')
 		this._root.appendChild(linkDSCSS)
 
 		let linkIconShapeCSS = document.createElement('link')
 		linkIconShapeCSS.setAttribute('rel', 'stylesheet')
-		linkIconShapeCSS.setAttribute('href', 'https://unpkg.com/@lensedegree/ds-css/src/components/IconShape/index.css')
+		linkIconShapeCSS.setAttribute('href', 'https://unpkg.com/@overlens/ds-css/src/components/IconShape/index.css')
 		this._root.appendChild(linkIconShapeCSS)
 	}
 

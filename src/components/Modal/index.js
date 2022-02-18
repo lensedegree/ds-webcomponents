@@ -30,7 +30,7 @@ class Modal extends HTMLElement {
 
 		let linkDSCSS = document.createElement('link')
 		linkDSCSS.setAttribute('rel', 'stylesheet')
-		linkDSCSS.setAttribute('href', 'https://unpkg.com/@lensedegree/ds-css/src/components/Modal/index.css')
+		linkDSCSS.setAttribute('href', 'https://unpkg.com/@overlens/ds-css/src/components/Modal/index.css')
 		this._root.appendChild(linkDSCSS)
 	}
 

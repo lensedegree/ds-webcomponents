@@ -39,6 +39,6 @@ export const BasicInput = ({
 		placeholder="${placeholder || ''}"
 		value="${content || ''}"
 		${error ? 'error' : ''}
-		info="${messageText}"
+		info="${messageText || ''}"
 	></lens-input>
 `

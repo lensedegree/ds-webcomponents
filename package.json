@@ -1,5 +1,5 @@
 {
-  "name": "@lensedegree/ds-webcomponents",
+  "name": "@overlens/ds-webcomponents",
   "version": "0.0.0-alpha.1",
   "description": "Design system desenvolvido para ser utilizado nos sistemas da Lense Degree",
   "main": "index.js",
@@ -10,20 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lensedegree/ds-webcomponents.git"
+    "url": "git+https://github.com/overlens/ds-webcomponents.git"
   },
   "keywords": [
-    "Lense Degree",
+    "Overlens",
     "Design System",
     "Web components",
     "Shadow DOM"
   ],
-  "author": "Lense Degree <contato@lensedegree.com> (http://lensedegree.com)",
+  "author": "Overlens <> ()",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lensedegree/ds-webcomponents/issues"
+    "url": "https://github.com/overlens/ds-webcomponents/issues"
   },
-  "homepage": "https://github.com/lensedegree/ds-webcomponents#readme",
+  "homepage": "https://github.com/overlens/ds-webcomponents#readme",
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@storybook/addon-actions": "^6.4.12",
