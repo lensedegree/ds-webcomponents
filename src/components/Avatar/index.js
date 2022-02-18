@@ -1,4 +1,4 @@
-import defaultAvatar from '../../assets/avatar-default.jpg'
+const imageDefault = require('../../assets/avatar-default.jpg')
 
 class Avatar extends HTMLElement {
 	constructor() {
@@ -33,7 +33,7 @@ class Avatar extends HTMLElement {
 
 	connectedCallback() {
 		if(!this.src) {
-			this.src = this.getAttribute('src') ?? defaultAvatar
+			this.src = this.getAttribute('src') ?? imageDefault
 		}
 
 		if(!this.size) {

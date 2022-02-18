@@ -25,7 +25,6 @@ export default {
 export const Basic = ({ size, notify, state, action }) => `
 	<lens-avatar
 		size="${size}"
-		src="${imageFile}"
 		notify="${notify}"
 		state="${state}"
 		action="${action}"
