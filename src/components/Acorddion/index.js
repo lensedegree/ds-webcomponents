@@ -1,3 +1,10 @@
+/* 
+	FIXME: Faz mais sentido o acorddion ser limitado a filhos de tag 'p'
+	e já ser previamente estilizado com gap, margin e etc.
+*/
+
+/* TODO?: Mudar o atributo "title" para "header" */
+
 class Acorddion extends HTMLElement {
 	constructor() {
     super()
@@ -5,6 +12,7 @@ class Acorddion extends HTMLElement {
 		if(!this._root) {
 			this._root = this.attachShadow({ mode: 'open' })
 			this._header()
+			this._rootStyle()
 		}
 
 		if(!this._container) {
@@ -27,6 +35,18 @@ class Acorddion extends HTMLElement {
 		linkDSCSS.setAttribute('rel', 'stylesheet')
 		linkDSCSS.setAttribute('href', 'https://unpkg.com/@overlens/ds-css/src/components/Acorddion/index.css')
 		this._root.appendChild(linkDSCSS)
+	}
+
+	_rootStyle() {
+		const style = document.createElement('style')
+		style.innerHTML = `
+			::slotted(*) {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+		`
+		this._root.appendChild(style)
 	}
 
 	connectedCallback() {

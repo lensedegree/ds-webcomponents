@@ -1,3 +1,14 @@
+/*
+	FIXME: O Toast deve receber como parâmetro o atributo referente ao tempo
+		que o toast demora para finalizar
+	
+	FIXME: O timeout para fechar o Toast deve congelar quando o usuário
+		colocar o mouse em cima do componente
+
+	FIXME: Deve ser passado um callback de fechamento para o toast
+*/
+import { PausableTimeout } from "../../util/timer"
+
 class Toast extends HTMLElement {
 	constructor() {
     super()
@@ -83,8 +94,14 @@ class Toast extends HTMLElement {
 
 		this._render()
 
-		/* FIXME: O Toast de reward também deveria sumir em 5s? */
-		setTimeout(this.closeToast, 5000)
+		// setTimeout(this.closeToast, 5000)
+		this.timer = PausableTimeout(this.closeToast, 5000)
+		this._container.addEventListener('mouseenter', () => {
+			this.timer.pause()
+		})
+		this._container.addEventListener('mouseleave', () => {
+			this.timer.resume()
+		})
 	}
 
 	_render() {

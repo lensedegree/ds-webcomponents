@@ -9,8 +9,6 @@ export default {
 	}
 }
 
-/* TODO: Adicionar opção selecionada por padrão */
-
 export const Dropdown = ({ active }) => `
 	<lens-dropdown
 		${active ? 'active' : ''}

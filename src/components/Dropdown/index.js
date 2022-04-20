@@ -1,3 +1,5 @@
+/* TODO: Adicionar opção selecionada por padrão */
+
 class Dropdown extends HTMLElement {
 	constructor() {
     super()

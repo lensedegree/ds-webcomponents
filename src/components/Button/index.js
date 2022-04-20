@@ -1,3 +1,6 @@
+/* FIXME: Os web components devem utilizar o onclick padrão do HTML ou
+  implementar o seu próprio atributo? */
+
 class Button extends HTMLElement {
   constructor() {
     super()

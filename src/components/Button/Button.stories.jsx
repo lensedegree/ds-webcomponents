@@ -14,9 +14,6 @@ export default {
   },
 }
 
-/* FIXME: Os web components devem utilizar o onclick padrão do HTML ou
-  implementar o seu próprio atributo? */
-
 export const Button = ({ variant, size }) => `
   <lens-button 
     variant="${variant}" 

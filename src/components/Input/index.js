@@ -1,7 +1,3 @@
-/* FIXME: Aparentemente elementos de fora do shadow dom não interagem
-com os elementos dentro dele, portanto uma tag form não teria acesso
-às informações do input */
-
 class Input extends HTMLElement {
 	constructor() {
     super()
@@ -153,11 +149,6 @@ class Input extends HTMLElement {
 			input.setAttribute('type', 'email')
 		} else if(this.variant === 'phone') {
 			input.setAttribute('type', 'tel')
-			input.setAttribute(
-				'pattern', 
-				'^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$'
-			) /* FIXME: Testar a validação */
-				/* Essa validação apenas gera um erro no console */
 		} else if(this.variant === 'password' && !this.visibility) {
 			input.setAttribute('type', 'password')
 		} else {

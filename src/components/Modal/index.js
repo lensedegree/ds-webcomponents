@@ -147,21 +147,13 @@ class Modal extends HTMLElement {
 
 		this._container.appendChild(buttonsContainer)
 	}
-
-	/* 
-		FIXME: Verificar se remover o componente é a melhor abordagem
-		Ponto negativo: Se o modal estive em um container, o container continuará
-		impedindo o usuário de acessar a página, pois só o modal será removido
-	*/
-
+	
 	handleConfirme() {
 		this.onAccept()
-		this.remove()
 	}
 
 	handleClose() {
 		this.onClose()
-		this.remove()
 	}
 }
 
